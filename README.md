@@ -3,31 +3,59 @@ This project is a small interpreted programming language that takes input from a
 this input and the user is able to evaluate or add on to this expression using a series of commands. Expressions can be
 appended to each other and variables can be defined in however the user desires. An example of a possible set of commands 
 is demonstrated below where 'c' creates an expression, 'p' prints an expression, 'd' defines a variable, and 'e' evaluates
-the expression:
+the expression. Expression (b10) and variables (x, y, z) can be named with 'foo' being the main expression the program works
+with
+
 c
+
 (+ 2 4)
+
 p
+
+foo
+
 (+ 2 4)
+
 d
+
 x
+
 4
+
 d
+
 y
+
 6
+
 d
+
 z
+
 (+ x y)
+
 p
+
 z
+
 (+ x y)
+
 e
+
 z
+
 10
+
 d
+
 b10
+
 (+ 2 4 (- 10 7) (* 3 (+ 2 5))) 
+
 p
+
 b10
+
 (+ 2 4 (- 10 7) (* 3 (+ 2 5)))
 
 Project Title: Small interpreted programming language
